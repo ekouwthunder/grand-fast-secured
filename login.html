@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login / Register | Grand Bank</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo"><i class="fas fa-university"></i> Grand<span>Bank</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html">Account & Balance</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="auth.html" class="nav-btn active">Sign In / Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Authentication Form Section -->
+  <section class="auth-container">
+    <div class="auth-box">
+      
+      <!-- Radio Toggle Mechanism -->
+      <input type="radio" id="tab-login" name="auth-tab" checked>
+      <input type="radio" id="tab-signup" name="auth-tab">
+
+      <div class="tab-header">
+        <label for="tab-login" class="tab-label">Sign In</label>
+        <label for="tab-signup" class="tab-label">Create Account</label>
+      </div>
+
+      <!-- Login Form -->
+      <form class="auth-form form-login" action="dashboard.html">
+        <h2>Welcome Back</h2>
+        <p class="auth-sub">Access your Grand Bank online portal</p>
+        
+        <div class="form-group">
+          <label>Account Number or Username</label>
+          <input type="text" placeholder="e.g. 987654321" required>
+        </div>
+
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" placeholder="••••••••••••" required>
+        </div>
+
+        <div class="form-options">
+          <label><input type="checkbox"> Remember Me</label>
+          <a href="#" class="forgot-pass">Forgot Password?</a>
+        </div>
+
+        <button type="submit" class="submit-btn">Login to Portal</button>
+      </form>
+
+      <!-- Sign Up Form -->
+      <form class="auth-form form-signup" action="dashboard.html">
+        <h2>Open an Account</h2>
+        <p class="auth-sub">Join Grand Bank today in under 2 minutes</p>
+        
+        <div class="form-group">
+          <label>Full Legal Name</label>
+          <input type="text" placeholder="e.g. Maria Santos" required>
+        </div>
+
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" placeholder="maria@example.com" required>
+        </div>
+
+        <div class="form-group">
+          <label>Account Type</label>
+          <select required>
+            <option value="checking">Checking Account</option>
+            <option value="savings">High-Yield Savings</option>
+            <option value="business">Business Account</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Create Password</label>
+          <input type="password" placeholder="••••••••••••" required>
+        </div>
+
+        <button type="submit" class="submit-btn">Register & Open Account</button>
+      </form>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Grand Bank. All rights reserved. Member FDIC.</p>
+  </footer>
+
+</body>
+</html>
